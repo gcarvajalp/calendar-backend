@@ -43,7 +43,7 @@ app.use(_express["default"].json());
 app.use(_express["default"]["static"](_path["default"].join(__dirname, 'public'))); //directorio publico
 //settings
 
-app.set('PORT', process.env.SERVER_PORT || 3002); //routes
+app.set('PORT', process.env.PORT || 3002); //routes
 
 app.use('/', _index["default"]);
 app.use('/api/auth', _auth["default"]);

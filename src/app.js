@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public'))); //directorio publico
 
 //settings
-app.set('PORT', process.env.SERVER_PORT || 3002);
+app.set('PORT', process.env.PORT || 3002);
 
 //routes
 app.use('/', indexRoute);
