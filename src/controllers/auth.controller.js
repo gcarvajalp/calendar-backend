@@ -100,7 +100,9 @@ export const authRenew = (req, res) => {
 
     return res.json({
       message: 'auth renew',
-      token
+      token,
+      uid,
+      name
     });
 
   } catch (err) {
